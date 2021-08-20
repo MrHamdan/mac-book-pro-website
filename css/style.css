@@ -2,7 +2,7 @@
 .mac-image{
     width: 500px;
     height: 500px;
-    margin-top:-150px;
+    margin-top:-230px;
 }
 /* Information Section CSS */
 .information{
@@ -36,4 +36,16 @@
 
 .promo-code{
     gap: 20px;
+}
+
+
+
+/* Footer Design */
+
+.total-text{
+    text-align: center;
+}
+
+.hr-tag{
+    width: 50%;
 }
