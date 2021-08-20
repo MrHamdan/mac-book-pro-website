@@ -30,30 +30,37 @@
                     <br>
 
                     <h5 class="mt-3">Memory</h5>
-                    <button type="button" class="btn btn-outline-dark row col-lg-6 button-design-1">8GB unified
+                    <button id="8gb-button" type="button" class="btn btn-outline-dark row col-lg-6 button-design-1">8GB
+                        unified
                         memory</button>
-                    <button type="button" class="btn btn-outline-dark row col-lg-6 button-design-1">16GB unified
+                    <button id="16gb-button" type="button"
+                        class="btn btn-outline-dark row col-lg-6 button-design-1">16GB unified
                         memory</button>
 
                     <br>
 
 
                     <h5 class="mt-5">Storage</h5>
-                    <button type="button" class="btn btn-outline-dark row col-lg-4 button-design-2">8GB unified
-                        memory</button>
-                    <button type="button" class="btn btn-outline-dark row col-lg-4 button-design-2">16GB unified
-                        memory</button>
-                    <button type="button" class="btn btn-outline-dark row col-lg-4 button-design-2">16GB unified
-                        memory</button>
+                    <button id="256gb-button" type="button"
+                        class="btn btn-outline-dark row col-lg-4 button-design-2">256GB SSD
+                        storage</button>
+                    <button id="512gb-button" type="button"
+                        class="btn btn-outline-dark row col-lg-4 button-design-2">512GB SSD
+                        storage</button>
+                    <button id="1tb-button" type="button" class="btn btn-outline-dark row col-lg-4 button-design-2">1TB
+                        SSD
+                        storage</button>
 
 
                     <br>
 
 
                     <h5 class="mt-5">Choose your delivery option</h5>
-                    <button type="button" class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 25 Free
+                    <button id="free-delivery-button" type="button"
+                        class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 25 Free
                         Prime delivery</button>
-                    <button type="button" class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 21
+                    <button id="delivery-charge-button" type="button"
+                        class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 21
                         Delivery charge $20</button>
 
 
@@ -71,25 +78,25 @@
                             <tr>
                                 <th scope="row">Extra Memory Cost</th>
                                 <td></td>
-                                <td>$0</td>
+                                <td>$<span id="extra-memory">0</span></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">Extra Storage Cost</th>
                                 <td></td>
-                                <td>$0</td>
+                                <td>$<span id="extra-storage">0</span></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <th scope="row">Delivery charge</th>
                                 <td></td>
-                                <td>$0</td>
+                                <td>$<span id="delivery-charge">0</span></td>
                             </tr>
                             <thead>
                                 <tr>
                                     <th scope="col">Total Price</th>
                                     <th scope="col"></th>
-                                    <th scope="col">$1299</th>
+                                    <th scope="col">$<span id="total-price">1299</span></th>
                                 </tr>
                             </thead>
                         </tbody>
@@ -98,10 +105,10 @@
                         <h5>Add Promo code</h5>
                         <div class="row promo-code">
                             <div class="row col-lg-6">
-                                <input type="text">
+                                <input id="input-Field" type="text">
                             </div>
                             <div class="row col-lg-6 w-25">
-                                <button type="button" class="btn btn-danger">Add</button>
+                                <button id="add-button" type="button" class="btn btn-danger">Apply</button>
 
                             </div>
 
