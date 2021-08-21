@@ -26,15 +26,12 @@ function calculateTotal() {
 // Handle Memory Events
 
 document.getElementById('8gb-button').addEventListener('click', function () {
-    /* const getMemoryCost = document.getElementById('memory-cost');
-    getMemoryCost.innerText = 0; */
+
     updateCost('memory', 0);
 
 });
 
 document.getElementById('16gb-button').addEventListener('click', function () {
-    /* const getMemoryCost = document.getElementById('memory-cost');
-    getMemoryCost.innerText = 180; */
 
     updateCost('memory', 180);
 
@@ -43,26 +40,20 @@ document.getElementById('16gb-button').addEventListener('click', function () {
 // Handle Storage Events
 
 document.getElementById('256gb-button').addEventListener('click', function () {
-    /* const getStorageCost = document.getElementById('storage-cost');
-    getStorageCost.innerText = 0; */
 
     updateCost('storage', 0);
+
 });
 
 
 document.getElementById('512gb-button').addEventListener('click', function () {
-    /*     const getStorageCost = document.getElementById('storage-cost');
-        getStorageCost.innerText = 100; */
 
     updateCost('storage', 100);
-
 
 });
 
 
 document.getElementById('1tb-button').addEventListener('click', function () {
-    /* const getStorageCost = document.getElementById('storage-cost');
-    getStorageCost.innerText = 180; */
 
     updateCost('storage', 180);
 
@@ -72,21 +63,15 @@ document.getElementById('1tb-button').addEventListener('click', function () {
 // Handle Delivery Events
 
 document.getElementById('free-delivery').addEventListener('click', function () {
-    /* const getDeliveryCost = document.getElementById('delivery-cost');
-    getDeliveryCost.innerText = 0; */
 
     updateCost('delivery', 0);
-
 
 });
 
 
 document.getElementById('paid-delivery').addEventListener('click', function () {
-    /* const getDeliveryCost = document.getElementById('delivery-cost');
-    getDeliveryCost.innerText = 20; */
 
     updateCost('delivery', 20);
-
 
 });
 
