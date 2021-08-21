@@ -84,9 +84,10 @@ document.getElementById('apply-button').addEventListener('click', function () {
     const getPromoCode = document.getElementById('input-field');
     const promoCode = getPromoCode.value;
     const totalPriceUsingPromoCode = document.getElementById('total-cost')
+    const totalPrice = document.getElementById('total-price');
     if (promoCode.toLowerCase() == 'stevekaku') {
-        const promoDiscount = parseFloat(totalPriceUsingPromoCode.innerText) * 0.2;
-        totalPriceUsingPromoCode.innerText = parseFloat(totalPriceUsingPromoCode.innerText) - promoDiscount;
+        const promoDiscount = parseFloat(totalPrice.innerText) * 0.2;
+        totalPriceUsingPromoCode.innerText = parseFloat(totalPrice.innerText) - promoDiscount;
     }
     else {
         alert('Please Provide Valid Promo Code');
