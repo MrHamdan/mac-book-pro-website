@@ -17,17 +17,25 @@
     <main>
         <!-- Mac Book Main Section Start -->
         <section class="container">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="row col-lg-6">
+            <div class="row d-flex justify-content-center row-design">
+
+                <!-- Mac Image -->
+
+                <div class="row col-lg-6 ">
                     <img class="mac-image" src="images/mac.png" alt="">
                 </div>
-                <div class="row col-lg-6 align-items-start information">
+
+                <!-- Mac Book Specification Info -->
+
+                <article class="row col-lg-6 information">
                     <h1>Customize your Blue 24-inch</h1><br>
                     <h1>iMac with Apple M1 chip.</h1>
                     <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
                         16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/ USB 4 ports Magic
                         Mouse Magic Keyboard - US English</p>
                     <br>
+
+                    <!-- Mac Book Memory Part -->
 
                     <h5 class="mt-3">Memory</h5>
                     <button id="8gb-button" type="button" class="btn btn-outline-dark row col-lg-6 button-design-1">8GB
@@ -39,6 +47,7 @@
 
                     <br>
 
+                    <!-- Mac Book Storage Part -->
 
                     <h5 class="mt-5">Storage</h5>
                     <button id="256gb-button" type="button"
@@ -51,80 +60,88 @@
                         SSD
                         storage</button>
 
-
                     <br>
 
+                    <!-- Mac Book Delivery Part -->
 
                     <h5 class="mt-5">Choose your delivery option</h5>
-                    <button id="free-delivery-button" type="button"
-                        class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 25 Free
+                    <button id="free-delivery" type="button"
+                        class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 25 FREE
                         Prime delivery</button>
-                    <button id="delivery-charge-button" type="button"
+                    <button id="paid-delivery" type="button"
                         class="btn btn-outline-dark row col-lg-6 button-design-3">Friday, Aug 21
                         Delivery charge $20</button>
 
 
                     <br>
 
-                    <table class="table mt-5 w-75">
-                        <thead>
+                    <!-- Mac Book Individual Pricing & Subtotal Part -->
+
+                    <table class="table mt-5 w-75 fw-bold">
+                        <tbody>
+
                             <tr>
                                 <th scope="col">Best Price</th>
-                                <th scope="col"></th>
-                                <th scope="col">$1299</th>
+                                <td scope="col"></td>
+                                <td scope="col">$1299</td>
                             </tr>
-                        </thead>
-                        <tbody>
+
                             <tr>
                                 <th scope="row">Extra Memory Cost</th>
                                 <td></td>
-                                <td>$<span id="extra-memory">0</span></td>
-                                <td></td>
+                                <td>$<span id="memory-cost">0</span></td>
+
                             </tr>
                             <tr>
                                 <th scope="row">Extra Storage Cost</th>
                                 <td></td>
-                                <td>$<span id="extra-storage">0</span></td>
-                                <td></td>
+                                <td>$<span id="storage-cost">0</span></td>
+
                             </tr>
                             <tr>
                                 <th scope="row">Delivery charge</th>
                                 <td></td>
-                                <td>$<span id="delivery-charge">0</span></td>
+                                <td>$<span id="delivery-cost">0</span></td>
+
                             </tr>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Total Price</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">$<span id="total-price">1299</span></th>
-                                </tr>
-                            </thead>
+                            <thead></thead>
+                            <tr>
+                                <th scope="col">Total Price</th>
+                                <td scope="col"></td>
+                                <td scope="col">$<span id="total-price">1299</span></td>
+                            </tr>
+
                         </tbody>
                     </table>
+
+                    <!-- Mac Book Apply Promo Code Part -->
+
                     <div>
                         <h5>Add Promo code</h5>
                         <div class="row promo-code">
                             <div class="row col-lg-6">
-                                <input id="input-Field" type="text">
+                                <input id="input-field" type="text" placeholder="Enter Promo Code">
                             </div>
                             <div class="row col-lg-6 w-25">
-                                <button id="add-button" type="button" class="btn btn-danger">Apply</button>
+                                <button id="apply-button" type="button" class="btn btn-danger">Apply</button>
 
                             </div>
 
                         </div>
                     </div>
-                </div>
+                </article>
+            </div>
 
+            <!-- Mac Book Total Price After Using Promo Code Part -->
+
+            <div class="container">
+                <hr>
+                <h1 class="total-text">Total: $<span id="total-cost">1299</span></h1>
             </div>
         </section>
 
     </main>
-    <!-- Main Mac Book Section End -->
-    <footer class="container">
-        <hr>
-        <h1 class="total-text">Total: $1299</h1>
-    </footer>
+
 
     <script src="js/mac-book.js"></script>
 </body>

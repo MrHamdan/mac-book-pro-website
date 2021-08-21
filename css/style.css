@@ -1,8 +1,12 @@
+/* Row Design */
+.row-design{
+    margin-top: -70px;
+}
 /* Mac Image CSS */
 .mac-image{
     width: 500px;
     height: 500px;
-    margin-top:-230px;
+    margin-top: 125px;
 }
 /* Information Section CSS */
 .information{
@@ -12,21 +16,21 @@
 .button-design-1{
     width:250px;
     margin-left:  10px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 
 .button-design-2{
     width:180px;
     margin-left:  10px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 
 .button-design-3{
     width:300px;
     margin-left:  10px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 
